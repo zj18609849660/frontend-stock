@@ -1,0 +1,32 @@
+<div class="sign-content">
+  <h3 class="title-color">Welcome to Stock Market System</h3>
+  <hr />
+  <form [formGroup]="loginForm">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input class="form-control" formControlName="username" type="text" placeholder="Username" name="username"
+            id="username" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input class="form-control" formControlName="password" type="password" placeholder="Password" name="password"
+            id="password" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <button type="button" class="btn btn-success  btn-block" (click)="onLogin()">Login</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <button type="button" class="btn btn-danger  btn-block" (click)="onSignup()">Signup</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
