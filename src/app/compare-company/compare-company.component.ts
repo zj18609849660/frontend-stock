@@ -93,7 +93,7 @@ export class CompareCompanyComponent implements OnInit {
               name: companyName2,
               type: 'line',
               stack: 'price',
-              data: resp.company1Data
+              data: resp.company2Data
             }
           ]
         };
